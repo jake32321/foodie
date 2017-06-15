@@ -2,7 +2,7 @@
   "name": "where-should-i-eat",
   "version": "1.0.0",
   "description": "Find places to eat through Slack!",
-  "main": "index.js",
+  "main": "master.js",
   "scripts": {
     "test": "npm test"
   },
