@@ -1,0 +1,29 @@
+{
+  "name": "where-should-i-eat",
+  "version": "1.0.0",
+  "description": "Find places to eat through Slack!",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jake32321/where-should-i-eat.git"
+  },
+  "keywords": [
+    "food",
+    "places",
+    "map",
+    "slack"
+  ],
+  "author": "Jacob J. Reed <jacob.reed2017@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jake32321/where-should-i-eat/issues"
+  },
+  "homepage": "https://github.com/jake32321/where-should-i-eat#readme",
+  "dependencies": {
+    "bluebird": "^3.5.0",
+    "pg": "^6.2.4"
+  }
+}
