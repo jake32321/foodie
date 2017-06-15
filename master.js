@@ -7,5 +7,9 @@ const port = process.env.PORT || 8080;
 
 const settings = {
     token: config.slackToken,
-    name: 'Foodie' 
+    name: 'foodie' 
 }
+
+bot.on('start', () => {
+    bot.postMessageToChannel('general', 'Hello everyone!');
+});
