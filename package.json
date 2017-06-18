@@ -18,8 +18,7 @@
     "request": "^2.79.0",
     "wordfilter": "^0.2.6",
     "giphy-api": "^1.2.6",
-    "zomato": "^1.1.0",
-    "bluebird": "^3.5.0"
+    "zomato.js": "^1.0.4"
   },
   "devDependencies": {},
   "repository": {
