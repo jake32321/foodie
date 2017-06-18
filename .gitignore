@@ -1,3 +1,9 @@
+<<<<<<< HEAD
 .db
 node_modules
 components/routes/_*
+=======
+/node_modules
+package-lock.json
+config.js
+>>>>>>> 4dae04b56869c576badae8af9243c9f6a69f01fb

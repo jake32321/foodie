@@ -26,7 +26,6 @@ module.exports = function(controller) {
 
     });
 
-
     controller.hears(['question'], 'direct_message,direct_mention', function(bot, message) {
 
         bot.createConversation(message, function(err, convo) {
