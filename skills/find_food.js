@@ -21,7 +21,7 @@ module.exports = (controller) => {
       convo.say('Finding somewhere for you to eat!');
     });
     
-    yelpSearch.search({term: 'food', location: '90210', limit: 10})
+    yelpSearch.search({term: internals.searchCrit.cusine, location: '62901', limit: 1})
       .then((data) => {
         console.log(data);
       });
