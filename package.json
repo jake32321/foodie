@@ -17,8 +17,8 @@
     "querystring": "^0.2.0",
     "request": "^2.79.0",
     "wordfilter": "^0.2.6",
-    "yelp": "^1.0.2",
-    "giphy-api": "^1.2.6"
+    "giphy-api": "^1.2.6",
+    "zomato.js": "^1.0.4"
   },
   "devDependencies": {},
   "repository": {
