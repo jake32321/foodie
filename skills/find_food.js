@@ -1,11 +1,15 @@
-const zomato = require('zomato.js');
-const zClient = new zomato(process.env.zomato_api_key);
+const Yelp = require('yelp-api-v3');
 
 var internals = {
+  yelpConfig: {
+    app_id: process.env.yelp_id,
+    app_secret: process.env.yelp_secret 
+  },
   searchCrit: {},
   resData: {}
 };
 
+var yelpSearch = new Yelp(internals.yelpConfig);
 
 module.exports = (controller) => {
   controller.hears(['food me (.*) in (.*)'], 'direct_message,direct_mention', (bot, message) => {
@@ -17,13 +21,9 @@ module.exports = (controller) => {
       convo.say('Finding somewhere for you to eat!');
     });
     
-    zClient.cities({q: internals.searchCrit.place})
-      .then((cityRes) => {
-        console.log(cityRes[0].id);
-        return cityRes[0].id;
-      })
-      .then((cityId) => {
-        
+    yelpSearch.search({term: 'food', location: '90210', limit: 10})
+      .then((data) => {
+        console.log(data);
       });
   });
 };
