@@ -18,9 +18,8 @@
     "request": "^2.79.0",
     "wordfilter": "^0.2.6",
     "giphy-api": "^1.2.6",
-    "yelp-api-v3": "^1.5.0",
-    "zipcodes": "^3.0.0",
-    "yelp-fusion": "^1.0.3"
+    "yelp-fusion": "^1.0.3",
+    "goorl": "^2.1.0"
   },
   "devDependencies": {},
   "repository": {
