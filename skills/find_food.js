@@ -1,6 +1,6 @@
 'use strict'
 
-const DEBUG = true;
+const DEBUG = false;
 const Yelp = require('yelp-fusion');
 const goorl = require('goorl');
 const moduleConfig = require('../init_modules.js');
@@ -42,15 +42,12 @@ module.exports = (controller) => {
           });
         })
         .then(resp => {
-          // More to come here          
-        
-          console.log(resp.jsonBody);
-          internals.goorlOptions.url = resp.jsonBody.businesses[0].url;
-        
+          // console.log(resp.body);
+          var url = generateRandomLoc(resp.jsonBody.businesses);
+          internals.goorlOptions.url = url;
           return goorl(internals.goorlOptions);
         })
         .then(url => {
-          console.log(url);
           convo.say('Here ya go! ' + url);
         })
         .catch(e => {
@@ -68,7 +65,7 @@ module.exports = (controller) => {
   });
 };
 
-var createRandomZip = (local) => {
-  var randomZip = local[Math.floor(Math.random() * local.length)];
-  return randomZip.zip;
+var generateRandomLoc = (places) => {
+  var randomPlace = places[Math.floor(Math.random() * places.length)];
+  return randomPlace.url;
 }
