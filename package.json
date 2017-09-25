@@ -1,7 +1,7 @@
 {
   "name": "botkit-starter-slack",
   "version": "0.0.2",
-  "description": "A starter kit for building a custom Slack bot with Botkit Studio",
+  "description": "Bot that finds a place for you to eat!",
   "main": "bot.js",
   "scripts": {
     "start": "node bot.js"
@@ -18,22 +18,25 @@
     "request": "^2.79.0",
     "wordfilter": "^0.2.6",
     "giphy-api": "^1.2.6",
-    "yelp-api-v3": "^1.5.0"
+    "yelp-api-v3": "^1.5.0",
+    "zipcodes": "^3.0.0",
+    "yelp-fusion": "^1.0.3"
   },
   "devDependencies": {},
   "repository": {
     "type": "git",
-    "url": "https://github.com/howdyai/botkit-starter-slack.git"
+    "url": "https://github.com/jake32321/where-should-i-eat.git"
   },
   "bugs": {
-    "url": "https://github.com/howdyai/botkit-starter-slack/issues"
+    "url": "https://github.com/jake32321/where-should-i-eat/issues"
   },
-  "homepage": "https://github.com/howdyai/botkit-starter-slack",
+  "homepage": "https://github.com/jake32321/where-should-i-eat",
   "keywords": [
     "bots",
     "chatbots",
-    "slack"
+    "slack",
+    "food"
   ],
-  "author": "ben@howdy.ai",
+  "author": "Jacob Reed <jacob.reed2017@gmail.com>",
   "license": "ISC"
 }
